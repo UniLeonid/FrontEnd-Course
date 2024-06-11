@@ -39,7 +39,7 @@ function initButton(id, height) {
     });
 }
 
-initButton('bio', 265)
-initButton('projects', 180)
-initButton('libraries', 218)
-initButton('contacts', 195)
+initButton('bio', 288)
+initButton('projects', 185)
+initButton('libraries', 250)
+initButton('contacts', 200)

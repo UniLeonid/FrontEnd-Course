@@ -13,8 +13,16 @@ a, p {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul::marker {
+    color: #2e2e2e;
 }
 
 .non-copyable {
@@ -88,7 +96,7 @@ a.button {
 a.button:hover {
     padding-top: 5.5px;
     padding-bottom: 5.5px;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #101010;
 
     display: block;
@@ -97,7 +105,7 @@ a.button:hover {
 a.selected-button {
     padding-top: 5.5px;
     padding-bottom: 5.5px;
-    font-size: 18px;
+    font-size: 20px;
     background-color: green !important;
 }
 
@@ -112,8 +120,8 @@ img.logo {
 
     border: solid;
     border-radius: 60px;
-    border-color: white;
-    border-width: 3px;
+    border-color: #333;
+    border-width: 5px;
 }
 
 div#contacts-block {
