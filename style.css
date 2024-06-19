@@ -47,9 +47,7 @@ body {
 
 /* === */
 
-div#container {
-    width: 600px;
-    height: 120px;
+div.container {
     background-color: #2e2e2e;
 
     border: solid;
@@ -58,12 +56,6 @@ div#container {
    
     border-radius: 25px;
     padding: 20px;
-
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     
     margin: auto;
 
@@ -71,6 +63,17 @@ div#container {
 
     transition-duration: 500ms;
     transition-timing-function: ease-in-out;
+}
+
+#portfolio-container {
+    width: 650px;
+    height: 120px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 div.header {
@@ -91,6 +94,8 @@ a.button {
     transition-duration: 100ms;
 
     display: block;
+
+    text-decoration: none;
 }
 
 a.button:hover {
@@ -144,4 +149,54 @@ img.inverted-logo {
 
 div#bio-block {
     margin-top: 15px;
+}
+
+/* === XKCD === */
+
+#xkcd-html, #xkcd-body {
+    height: 99%;
+}
+
+#xkcd-main {
+    display: flex;
+    
+    align-items: center;
+    height: 100%;
+}
+
+#xkcd-container {
+    min-width: min(600px, 80%);
+}
+
+div.xkcd-full-title {
+    margin-top: 0px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+#xkcd-title {
+    margin: 0px;
+}
+
+.xkcd-image-div {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+#xkcd-image {
+    margin-top: 10px;
+    max-width: 100%;
 }

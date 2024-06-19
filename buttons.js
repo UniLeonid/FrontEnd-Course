@@ -1,16 +1,14 @@
 let lastOpen = null;
 
-let container = document.getElementById('container');
+let container = document.getElementById('portfolio-container');
 
 let elements = document.getElementsByTagName('a');
 
 for (let element of elements) {
     if (element.href) {
-        console.log(element);
         element.tabIndex = -1;
     }
 }
-
 
 function initButton(id, height) {
     let button = document.getElementById(id + '-button');
