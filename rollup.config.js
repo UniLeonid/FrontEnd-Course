@@ -4,7 +4,7 @@ import terser from '@rollup/plugin-terser';
 
 export default {
     input: ['src/buttons.ts', 'src/xkcd.ts'],
-    output: { dir: 'bundle' },
+    output: { dir: 'dist' },
     plugins: [
         typescript(),
         nodeResolve({ browser: true }),
