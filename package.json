@@ -10,5 +10,8 @@
   "scripts": {
     "build": "rollup --config"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "date-fns": "^3.6.0"
+  }
 }
