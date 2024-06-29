@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LeonidM</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="dist/buttons.ts" defer></script>
+
+    </head>
+    <body>
+        <main>
+            <div class="container" id="portfolio-container">
+                <img class="non-copyable logo" src="logo.png" alt="Profile photo">
+
+                <div class="header">
+                    <h1>LeonidM | Java Developer</h1>
+
+                    <div class="non-copyable buttons">
+                        <a id="bio-button" class="button">About me</a>
+                        <a id="projects-button" class="button">Projects</a>
+                        <a id="libraries-button" class="button">Libraries</a>
+                        <a id="contacts-button" class="button">Contacts</a>
+                        <a id="xkcd-button" class="button" href="comic.html">XKCD</a>
+                    </div>
+                </div>
+
+                <div id="bio-block" class="information-block" style="display: none">
+                    <p><b>Key skills:</b> Java, JUnit, Spring Framework, Hibernate, SQL, Gradle, Maven, Kafka, RabbitMQ, Git</p>
+                    <p><b>Languages:</b> Java, C#, Python, JavaScript, Haskell</p>
+                    <p><b>Hobby:</b> books, teaching programming, learning internals of Java and Spring Framework</p>
+                </div>
+
+                <div id="projects-block" class="information-block" style="display: none">
+                    <ul>
+                        <li><a href="https://smashup.ru"><b>SmashUp.ru</b></a><a> — Mashup streaming service</a></li>
+                        <li><a href="https://skyblockm.ru"><b>SkyBlockM.ru</b></a><a> — Hi-Tech Minecraft server</a></li>
+                    </ul>
+                </div>
+
+                <div id="libraries-block" class="information-block" style="display: none">
+                    <ul>
+                        <li><a href="https://github.com/LeonidMem/ORMM"><b>ORMM</b></a><a> — Light-weight ORM for Java</a></li>
+                        <li><a href="https://github.com/LeonidMem/SimpleBeans"><b>SimpleBeans</b></a><a> — Spring-like beans for Java</a></li>
+                        <li><a href="https://github.com/LeonidMem/EnumExtender"><b>EnumExtender</b></a><a> — Lightweight library for extending enums in Java at runtime</a></li>
+                        <li><a href="https://github.com/LeonidMem/FastNBT"><b>FastNBT</b></a><a> — As fast as possible library for Minecraft NBT</a></li>
+                    </ul>
+                </div>
+
+                <div id="contacts-block" class="non-copyable information-block" style="display: none">
+                    <a id="gh-link" href="https://github.com/LeonidMem" target="_blank"><img class="contacts-logo" src="contacts/github.svg" alt="GitHub logo"></a>
+                    <a id="gl-link" href="https://gitlab.com/LeonidMem" target="_blank"><img class="contacts-logo" src="contacts/gitlab.svg" alt="GitLab logo"></a>
+                    <a id="tg-link" href="https://t.me/leonidmem" target="_blank"><img class="contacts-logo inverted-logo" src="contacts/telegram.svg" alt="Telegram logo"></a>
+                    <a id="email" href="mailto:admin@smashup.ru" target="_blank"><img class="contacts-logo inverted-logo" src="contacts/email.svg" alt="Email logo"></a>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

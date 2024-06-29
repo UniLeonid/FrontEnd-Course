@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+    color: white;
+}
+
+a, p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul::marker {
+    color: #2e2e2e;
+}
+
+.non-copyable {
+    user-select: none;
+    -drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+.non-copyable * {
+    user-select: none;
+    -drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+body {
+    background-color: black;
+}
+
+/* === */
+
+div.container {
+    background-color: #2e2e2e;
+
+    border: solid;
+    border-color: #333;
+    border-width: 5px;
+   
+    border-radius: 25px;
+    padding: 20px;
+    
+    margin: auto;
+
+    overflow: hidden;
+
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+#portfolio-container {
+    width: 650px;
+    height: 120px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+div.header {
+    vertical-align: top;
+    
+    margin-left: 20px;
+    display: inline-block;
+}
+
+a.button {
+    border-radius: 10px;
+    padding: 7px 10px 7px 10px;
+    /* padding-top: 7px; */
+    background-color: black;
+    margin-right: 5px;
+    cursor: pointer;
+
+    transition-duration: 100ms;
+
+    display: block;
+
+    text-decoration: none;
+}
+
+a.button:hover {
+    padding-top: 5.5px;
+    padding-bottom: 5.5px;
+    font-size: 20px;
+    background-color: #101010;
+
+    display: block;
+}
+
+a.selected-button {
+    padding-top: 5.5px;
+    padding-bottom: 5.5px;
+    font-size: 20px;
+    background-color: green !important;
+}
+
+div.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+img.logo {
+    width: 119px;
+    height: 119px;
+
+    border: solid;
+    border-radius: 60px;
+    border-color: #333;
+    border-width: 5px;
+}
+
+div#contacts-block {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+img.contacts-logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+img.inverted-logo {
+    filter: invert(100%)
+}
+
+div#bio-block {
+    margin-top: 15px;
+}
+
+/* === XKCD === */
+
+#xkcd-html, #xkcd-body {
+    height: 99%;
+}
+
+#xkcd-main {
+    display: flex;
+    
+    align-items: center;
+    height: 100%;
+}
+
+#xkcd-container {
+    min-width: min(600px, 80%);
+}
+
+div.xkcd-full-title {
+    margin-top: 0px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+#xkcd-title {
+    margin: 0px;
+}
+
+.xkcd-image-div {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+#xkcd-image {
+    margin-top: 10px;
+    max-width: 100%;
+}
