@@ -39,7 +39,9 @@ export default function ComicPage() {
 
         {xkcd && (
           <div className="xkcd-image-div">
-            <img
+            <Image
+              width={740}
+              height={305}
               className="xkcd-image"
               src={xkcd.img}
               alt={xkcd.alt}
