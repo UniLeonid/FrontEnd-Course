@@ -164,7 +164,7 @@ div#bio-block {
     height: 100%;
 }
 
-#xkcd-container {
+.xkcd-container {
     min-width: min(600px, 80%);
 }
 
@@ -181,7 +181,7 @@ div.xkcd-full-title {
     gap: 20px;
 }
 
-#xkcd-title {
+.xkcd-title {
     margin: 0px;
 }
 
@@ -196,7 +196,7 @@ div.xkcd-full-title {
     align-items: center;
 }
 
-#xkcd-image {
+.xkcd-image {
     margin-top: 10px;
     max-width: 100%;
 }
