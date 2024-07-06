@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
+  basePath: "/FrontEnd-Course",
   images: {
     remotePatterns: [
       {
@@ -9,6 +11,7 @@ const nextConfig = {
         pathname: '/**'
       }
     ],
+    unoptimized: true,
   },
 };
 
