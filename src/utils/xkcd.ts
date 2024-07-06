@@ -1,5 +1,6 @@
 import { formatDistance } from "date-fns";
 
+
 interface RawXkcdResponse {
   safe_title: string;
   img: string;
@@ -9,7 +10,7 @@ interface RawXkcdResponse {
   day: string;
 }
 
-interface XkcdResponse {
+export interface XkcdResponse {
   safeTitle: string;
   img: string;
   alt: string;
@@ -17,7 +18,7 @@ interface XkcdResponse {
   fromNow: string;
 }
 
-async function fetchXkcd(): Promise<XkcdResponse> {
+export async function fetchXkcd(): Promise<XkcdResponse> {
   return fetch(
     "https://fwd.innopolis.university/api/hw2?" +
       new URLSearchParams({
@@ -56,27 +57,3 @@ async function fetchXkcd(): Promise<XkcdResponse> {
       };
     });
 }
-
-fetchXkcd().then((response: XkcdResponse) => {
-  let titleElement: HTMLElement | null = document.getElementById("xkcd-title");
-  if (titleElement) {
-    titleElement.innerText = response.safeTitle;
-  }
-
-  let imageElement: HTMLElement | null = document.getElementById("xkcd-image");
-  if (imageElement instanceof HTMLImageElement) {
-    imageElement.src = response.img;
-    imageElement.alt = response.alt;
-    imageElement.style.display = "";
-  }
-
-  let dateElement: HTMLElement | null = document.getElementById("xkcd-date");
-  if (dateElement) {
-    dateElement.innerText =
-      "Published at " +
-      response.date.toLocaleDateString() +
-      " | " +
-      response.fromNow;
-    dateElement.style.display = "";
-  }
-});
