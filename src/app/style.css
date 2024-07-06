@@ -153,8 +153,8 @@ div#bio-block {
 
 /* === XKCD === */
 
-#xkcd-html, #xkcd-body {
-    height: 99%;
+html, body {
+    /* height: 99%; */
 }
 
 #xkcd-main {
@@ -166,6 +166,15 @@ div#bio-block {
 
 .xkcd-container {
     min-width: min(600px, 80%);
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    max-width: 760px;
+    max-height: 350px;
 }
 
 div.xkcd-full-title {
@@ -199,4 +208,24 @@ div.xkcd-full-title {
 .xkcd-image {
     margin-top: 10px;
     max-width: 100%;
+}
+
+.header-container {
+    max-width: 190px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container {
+    max-width: 100px;
+
+    display: flex;
+    justify-content: space-around;
+
+    bottom: 10px;
+    left: 0;
+    right: 0;
+
+    position: absolute;
 }

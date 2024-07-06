@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import logo from "/public/logo.png";
-import Link from "next/link";
 import Button from "@/components/Button";
 import {
   BioInformationBlock,
@@ -74,9 +73,6 @@ export default function PortfolioPage() {
             >
               Contacts
             </Button>
-            <Link href={"/comic"} legacyBehavior>
-              <Button>XKCD</Button>
-            </Link>
           </div>
         </div>
 
