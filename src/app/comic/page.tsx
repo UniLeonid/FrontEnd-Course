@@ -1,17 +1,8 @@
-'use client';
-
-import { useEffect, useState } from 'react';
 import { XkcdResponse, fetchXkcd } from '@/utils/xkcd';
 import Comic from '@/components/Comic';
 
-export default function ComicPage() {
-    const [xkcd, setXkcd] = useState<XkcdResponse>();
-
-    useEffect(() => {
-        fetchXkcd().then((xkcd) => {
-            setXkcd(xkcd);
-        });
-    }, []);
+export default async function ComicPage() {
+    const xkcd: XkcdResponse = await fetchXkcd();
 
     return (
         <main id='xkcd-main'>
