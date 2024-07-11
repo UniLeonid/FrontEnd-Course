@@ -1,13 +1,13 @@
 export default function InformationBlock({
-  children,
-  id,
+    children,
+    id
 }: {
-  children?: React.ReactNode;
-  id?: string;
+    children?: React.ReactNode;
+    id?: string;
 }) {
-  return (
-    <div id={id} className="information-block">
-      {children}
-    </div>
-  );
+    return (
+        <div id={id} className='information-block'>
+            {children}
+        </div>
+    );
 }
